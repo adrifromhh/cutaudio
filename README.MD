@@ -1,5 +1,5 @@
 # cutaudio.sh
-Cuts large audiofiles in chunks.
+Cuts large audiofiles in chunks of specified length and replaces metadata
 
 ### Syntax
 `cutaudio.sh INPUT OUTPUT LENGTH TITLE`
