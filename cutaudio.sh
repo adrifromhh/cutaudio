@@ -3,7 +3,7 @@
 # Verbose mode
 #verbose="TRUE"
 
-syntax="cutaudio.sh INPUT OUTPUT LENGTH [\"Metadata Title\"]"
+syntax="cutaudio.sh INPUT OUTPUT LENGTH TITLE"
 
 if [[ $# -lt 4 ]]; then
     echo "-- Too few arguments --"
