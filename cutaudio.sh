@@ -69,8 +69,6 @@ fi
 # CUT FILES IN CHUNKS / STRIP METADATA
 # ------------------------------------
 
-#ffmpeg -i $FILE -map 0 -c copy -f segment -segment_time $duration -reset_timestamps 1 $NAME-%03d.m4a
-#ffmpeg -i $FILE -map 0 -map_metadata -1 -c copy -f segment -segment_time $duration -reset_timestamps 1 "$NAME-%03d.m4a"
 ffmpeg  -i $input -map 0 -map_metadata -1 -f segment -segment_time $duration -c copy $OUT-%"$digits"d."$INPUTTYPE"
 
 # ----------------
